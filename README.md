@@ -15,7 +15,7 @@ The solver accepts an image of a maze as input.
 
 Example input:
 
-<img src="mazes/test_maze.png" alt="example maze" width=200 height=200 style="image-rendering: optimizeSpeed; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: pixelated; -ms-interpolation-mode: nearest-neighbor;" />
+![image](mazes/readme_maze.png)
 
 White pixels are interpreted as the path, and black pixels are interpreted as the walls.
 
