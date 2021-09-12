@@ -11,7 +11,7 @@ the end of the maze *somehow*, *somewhen*.
 
 The solver accepts an image of a maze as input.
 
-##Input interpretation
+### Input interpretation
 
 Example input:
 
@@ -21,7 +21,7 @@ White pixels are interpreted as the path, and black pixels are interpreted as th
 
 By default, the start is the top left pixel, and the goal is the bottom right pixel, though this can be configured via command line options.
 
-##Options
+### Options
 
 `-p <path>, --path <path>` specifies the path to the maze
 
