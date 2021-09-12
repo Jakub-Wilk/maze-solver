@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "maze-solver"
 version = "0.1.0"
-description = ""
+description = "A rudimentary maze solver"
 authors = ["Jakub Wilk <mail@jakubwilk.xyz>"]
 
 [tool.poetry.dependencies]
