@@ -33,5 +33,9 @@ class Maze:
                 else:
                     tile = Constants.TILES["path"]
                 grid[i].append(tile)
+
         # return an instance of Maze
         return cls(width, height, grid)
+
+    def get_tile_at(self, position: tuple[int, int]) -> int:
+        return self.grid[position[0]][position[1]]
