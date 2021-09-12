@@ -61,6 +61,9 @@ def main() -> None:
 
     image = Image.open(args.path)
     maze = Maze.create_from_image(image)
+    solver = Solver(maze, args.begin, args.end, args.animate, args.steps, args.output)
+
+    solver.solve()
 
 
 if __name__ == '__main__':
