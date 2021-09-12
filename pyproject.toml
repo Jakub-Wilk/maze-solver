@@ -2,7 +2,7 @@
 name = "maze-solver"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Jakub Wilk <mail@jakubwilk.xyz>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
