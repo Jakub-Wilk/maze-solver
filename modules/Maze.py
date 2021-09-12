@@ -37,5 +37,15 @@ class Maze:
         # return an instance of Maze
         return cls(width, height, grid)
 
+    def is_position_in_bounds(self, position: tuple[int, int]) -> bool:
+        if position[0] < 0 or position[0] > self.width:
+            return False
+        elif position[1] < 0 or position[1] > self.height:
+            return False
+        else:
+            return True
+
     def get_tile_at(self, position: tuple[int, int]) -> int:
+        if not self.is_position_in_bounds(position):
+            raise IndexError(f"Position {position} out of bounds!")
         return self.grid[position[0]][position[1]]
