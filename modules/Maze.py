@@ -19,6 +19,10 @@ class Maze:
         width = image.size[0]
         height = image.size[1]
         rgb_image = image.convert("RGB")
+
+        # Convert an image of the maze to a two-dimensional list of tiles.
+        # Every pixel is determined to be either
+        # black-ish ( R+G+B ∈ <0; 256*3/2> ) or white-ish ( R+G+B ∈ (256*3/2; 256*3> )
         grid = []
         for i in range(width):
             grid.append([])
@@ -29,4 +33,5 @@ class Maze:
                 else:
                     tile = Constants.TILES["path"]
                 grid[i].append(tile)
+        # return an instance of Maze
         return cls(width, height, grid)
