@@ -27,7 +27,7 @@ class Maze:
         for i in range(width):
             grid.append([])
             for j in range(height):
-                r, g, b = rgb_image.getpixel((j, i))
+                r, g, b = rgb_image.getpixel((i, j))
                 if r + g + b <= 384:
                     tile = Constants.TILES["wall"]
                 else:
