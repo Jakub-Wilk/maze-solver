@@ -2,14 +2,10 @@ from __future__ import annotations
 
 from PIL import Image
 
+import Constants
+
 
 class Maze:
-    tiles = {
-        'wall': 0,
-        'path': 1,
-        'unknown': 2,
-        'checking': 3
-    }
 
     # this class is a representation of a maze
 
@@ -29,8 +25,8 @@ class Maze:
             for j in range(height):
                 r, g, b = rgb_image.getpixel((j, i))
                 if r + g + b <= 384:
-                    tile = cls.tiles["wall"]
+                    tile = Constants.TILES["wall"]
                 else:
-                    tile = cls.tiles["path"]
+                    tile = Constants.TILES["path"]
                 grid[i].append(tile)
         return cls(width, height, grid)
