@@ -1,8 +1,10 @@
-from Maze import Maze
+from modules.Maze import Maze
+
 
 class Solver:
 
-    def __init__(self, maze: Maze, begin: tuple[int, int], end: [int, int], animate: bool, steps: int, output: str) -> None:
+    def __init__(self, maze: Maze, begin: tuple[int, int], end: [int, int], animate: bool, steps: int,
+                 output: str) -> None:
 
         self.maze = maze
         # set maze_max_coords to the bottom right pixel coordinates

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from PIL import Image
 
-import Constants
+from modules import Constants
 
 
 class Maze:
