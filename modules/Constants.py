@@ -10,5 +10,9 @@ TILES = {
 # tile color values
 
 TILE_COLORS = {
-
+    (45, 52, 54),  # wall
+    (223, 230, 233),  # path
+    (255, 118, 117),  # unknown
+    (85, 239, 196),  # checking
+    (99, 110, 114)  # dead
 }
